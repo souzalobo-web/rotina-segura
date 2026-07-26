@@ -1,0 +1,14 @@
+Listagem de caminhos de pasta
+O número de série do volume é 00000094 AC4E:347D
+D:.
+¦   index.html
+¦   Landing_page_SouDavidLobo_root.txt
+¦   script.js
+¦   style.css
+¦   
++---Assets
+    +---Icons
+    +---Images
+    ¦       mockup-ebook.webp
+    ¦       
+    +---Textures

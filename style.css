@@ -1,0 +1,2398 @@
+/* ==========================
+   RESET INICIAL
+========================== */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==========================
+   VARIÁVEIS DO PROJETO
+========================== */
+
+
+:root {
+
+    --preto: #161616;
+    --cinza-escuro: #222222;
+    --branco: #ffffff;
+    --cinza-claro: #f6f6f6;
+    --vermelho: #c62828;
+
+    --raio: 12px;
+
+    --sombra:
+    0 10px 30px rgba(0,0,0,0.15);
+
+}
+
+
+/* ==========================
+   CONFIGURAÇÃO GERAL
+========================== */
+
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: var(--preto);
+
+    color: var(--branco);
+
+}
+/* ==========================
+   HERO
+========================== */
+
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    padding: 80px 8%;
+
+}
+
+
+.hero-content {
+
+    max-width: 600px;
+
+}
+
+
+.hero-tag {
+
+    display: inline-block;
+
+    background-color: var(--cinza-escuro);
+
+    padding: 10px 18px;
+
+    border-radius: var(--raio);
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.hero h1 {
+
+    font-size: clamp(42px, 5vw, 70px);
+
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+.hero-subtitle {
+
+    font-size: 20px;
+
+    line-height: 1.6;
+
+    color: #cccccc;
+
+    margin-bottom: 35px;
+
+}
+
+
+
+.btn {
+
+    display: inline-block;
+
+    background-color: var(--vermelho);
+
+    color: white;
+
+    padding: 18px 35px;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    box-shadow: var(--sombra);
+
+    transition: .3s;
+
+}
+
+
+.btn:hover {
+
+    transform: translateY(-4px);
+
+}
+
+
+
+.hero-benefits {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    margin-top: 35px;
+
+    color: #dddddd;
+
+}
+
+
+
+.hero-image img {
+
+    width: 400px;
+
+    max-width: 100%;
+
+}
+/* ==========================
+   PROBLEM SECTION
+========================== */
+
+
+.problem-section {
+
+    min-height: 100vh;
+
+    background-color: var(--branco);
+
+    color: var(--preto);
+
+    padding: 100px 8%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+
+.section-title {
+
+    max-width: 800px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+
+}
+
+
+
+.section-title span {
+
+    color: var(--vermelho);
+
+    font-weight: bold;
+
+}
+
+
+
+.section-title h2 {
+
+    font-size: clamp(32px, 4vw, 50px);
+
+    line-height: 1.2;
+
+    margin: 20px 0;
+
+}
+
+
+
+.section-title p {
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    color: #555;
+
+}
+
+
+
+.problem-cards {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+}
+
+
+
+.problem-card {
+
+    background-color: var(--cinza-claro);
+
+    padding: 40px 30px;
+
+    border-radius: var(--raio);
+
+    text-align: center;
+
+    font-size: 40px;
+
+}
+
+
+
+.problem-card h3 {
+
+    font-size: 22px;
+
+    margin: 20px 0 15px;
+
+}
+
+
+
+.problem-card p {
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    color: #555;
+
+}
+
+
+
+@media(max-width: 900px){
+
+
+    .problem-cards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+}
+/* ==========================
+   PAIN SECTION
+========================== */
+
+
+.pain-section {
+
+    min-height: 100vh;
+
+    background-color: var(--preto);
+
+    color: var(--branco);
+
+    padding: 100px 8%;
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+
+.pain-content {
+
+    max-width: 900px;
+
+    margin: auto;
+
+}
+
+
+
+.section-label {
+
+    color: var(--vermelho);
+
+    font-weight: bold;
+
+}
+
+
+
+.pain-content h2 {
+
+    font-size: clamp(34px, 5vw, 60px);
+
+    line-height: 1.15;
+
+    margin: 25px 0;
+
+}
+
+
+
+.pain-content > p {
+
+    color: #cccccc;
+
+    font-size: 20px;
+
+    line-height: 1.6;
+
+    max-width: 700px;
+
+}
+
+
+
+.pain-list {
+
+    margin-top: 50px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+}
+
+
+
+.pain-item {
+
+    display: flex;
+
+    gap: 25px;
+
+    align-items: flex-start;
+
+    background-color: var(--cinza-escuro);
+
+    padding: 25px;
+
+    border-radius: var(--raio);
+
+}
+
+
+
+.pain-item:first-child {
+
+    border-left: 4px solid var(--vermelho);
+
+}
+
+
+
+.pain-item > *:first-child {
+
+    font-size: 35px;
+
+}
+
+
+
+.pain-item h3 {
+
+    margin-bottom: 10px;
+
+    font-size: 18px;
+
+}
+
+
+
+.pain-item p {
+
+    color: #cccccc;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+}
+/* ==========================
+   SOLUTION SECTION
+========================== */
+
+
+.solution-section {
+
+    background-color: var(--branco);
+
+    color: var(--preto);
+
+    padding: 100px 8%;
+
+}
+
+
+
+.solution-header {
+
+    max-width: 800px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+
+}
+
+
+
+.section-label-dark {
+
+    color: var(--vermelho);
+
+    font-weight: bold;
+
+}
+
+
+
+.solution-header h2 {
+
+    font-size: clamp(32px, 4vw, 50px);
+
+    line-height: 1.2;
+
+    margin: 20px 0;
+
+}
+
+
+
+.solution-header p {
+
+    color: #555;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+}
+
+
+
+.solution-grid {
+
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+}
+
+
+
+.solution-card {
+
+
+    background-color: var(--cinza-claro);
+
+    padding: 35px 25px;
+
+    border-radius: var(--raio);
+
+    text-align: center;
+
+
+}
+
+
+
+.solution-icon {
+
+    font-size: 28px;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.solution-card h3 {
+
+    font-size: 19px;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.solution-card p {
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    color: #555;
+
+}
+
+
+
+@media(max-width:900px){
+
+
+    .solution-grid {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+}
+.method-section {
+
+    background: #111;
+
+    color: white;
+
+    padding: 70px 8%;
+
+    text-align: center;
+
+}
+
+
+
+.method-section h2 {
+
+    max-width: 800px;
+
+    margin: 20px auto;
+
+    font-size: 2.4rem;
+
+}
+
+
+
+.section-description {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    color: #bdbdbd;
+
+    font-size: 1.1rem;
+
+}
+
+
+
+.section-tag {
+
+    display: inline-block;
+
+    border: 1px solid #8b1e1e;
+
+    padding: 8px 18px;
+
+    border-radius: 30px;
+
+    font-size: .85rem;
+
+    letter-spacing: 1px;
+
+}
+
+
+
+.method-grid {
+
+    margin-top: 50px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+
+
+.method-card {
+
+    background: #1b1b1b;
+
+    padding: 30px 20px;
+
+    border-radius: 16px;
+
+    position: relative;
+
+    border: 1px solid #333;
+
+}
+
+
+
+.method-number {
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 20px;
+
+    font-size: .8rem;
+
+    color: #777;
+
+}
+
+
+
+.method-icon {
+
+    font-size: 2rem;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.method-card h3 {
+
+    font-size: 1.3rem;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.method-card p {
+
+    color: #ccc;
+
+    font-size: .95rem;
+
+    line-height: 1.5;
+
+}
+
+
+
+@media(max-width:900px){
+
+    .method-grid{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+}
+
+
+
+@media(max-width:600px){
+
+    .method-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .method-section h2{
+
+        font-size:1.8rem;
+
+    }
+
+}
+.deliver-section {
+
+    background:#f5f5f3;
+
+    color:#151515;
+
+    padding:70px 8%;
+
+    text-align:center;
+
+}
+
+
+
+.light-tag {
+
+    border-color:#8b1e1e;
+
+}
+
+
+
+.dark-description {
+
+    color:#555;
+
+}
+
+
+
+.deliver-container {
+
+    margin-top:50px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:60px;
+
+}
+
+
+
+.ebook-image img {
+
+    max-width:320px;
+
+    width:100%;
+
+    filter:drop-shadow(0 20px 25px rgba(0,0,0,.25));
+
+}
+
+
+
+.deliver-content {
+
+    max-width:550px;
+
+    text-align:left;
+
+}
+
+
+
+.deliver-card {
+
+    display:flex;
+
+    gap:20px;
+
+    background:white;
+
+    padding:20px;
+
+    margin-bottom:15px;
+
+    border-radius:14px;
+
+    border-left:4px solid #8b1e1e;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+}
+
+
+
+.deliver-card span {
+
+    font-weight:bold;
+
+    color:#8b1e1e;
+
+    font-size:1.2rem;
+
+}
+
+
+
+.deliver-card h3 {
+
+    margin:0 0 8px;
+
+    font-size:1.15rem;
+
+}
+
+
+
+.deliver-card p {
+
+    margin:0;
+
+    color:#555;
+
+    line-height:1.5;
+
+}
+
+
+
+@media(max-width:900px){
+
+
+    .deliver-container{
+
+        flex-direction:column;
+
+    }
+
+
+    .deliver-content{
+
+        text-align:left;
+
+    }
+
+
+}
+/* ================================
+   BLOCO 7 - OFERTA E ENTREGÁVEIS
+================================ */
+
+
+.offer-section {
+
+    background:#111;
+
+    padding:80px 8%;
+
+}
+
+
+
+.offer-container {
+
+    max-width:950px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+
+
+.offer-container .section-tag {
+
+    color:#8b1e1e;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.offer-container h2 {
+
+    color:white;
+
+    font-size:2.2rem;
+
+    line-height:1.25;
+
+    max-width:750px;
+
+    margin:0 auto 20px;
+
+}
+
+
+
+.offer-intro {
+
+    color:#bbb;
+
+    max-width:650px;
+
+    margin:0 auto 45px;
+
+    line-height:1.6;
+
+    font-size:1.05rem;
+
+}
+
+
+
+/* GRID */
+
+.offer-grid {
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+
+
+/* CARDS */
+
+
+.offer-card {
+
+    background:#1b1b1b;
+
+    border:1px solid #292929;
+
+    border-radius:16px;
+
+    padding:25px;
+
+    text-align:left;
+
+    transition:.3s;
+
+}
+
+
+
+.offer-card:hover {
+
+    transform:translateY(-4px);
+
+}
+
+
+
+.main-offer {
+
+    border-left:4px solid #8b1e1e;
+
+}
+
+
+
+.premium-bonus {
+
+    border-left:4px solid #8b1e1e;
+
+}
+
+
+
+.offer-number {
+
+    color:#8b1e1e;
+
+    font-size:.75rem;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+}
+
+
+
+.offer-card h3 {
+
+    color:white;
+
+    font-size:1.1rem;
+
+    margin:12px 0;
+
+    line-height:1.35;
+
+}
+
+
+
+.offer-card p {
+
+    color:#aaa;
+
+    line-height:1.5;
+
+    font-size:.95rem;
+
+    margin-bottom:18px;
+
+}
+
+
+
+.offer-card strong {
+
+    color:white;
+
+    font-size:1.3rem;
+
+}
+
+
+
+/* TOTAL */
+
+
+.offer-total {
+
+    margin-top:45px;
+
+    padding-top:30px;
+
+    border-top:1px solid #292929;
+
+}
+
+
+
+.offer-total p {
+
+    color:#aaa;
+
+}
+
+
+
+.offer-total h3 {
+
+    color:white;
+
+    font-size:2.6rem;
+
+    margin-top:10px;
+
+}
+
+
+
+@media(max-width:700px){
+
+
+    .offer-section {
+
+        padding:70px 5%;
+
+    }
+
+
+    .offer-container h2 {
+
+        font-size:1.7rem;
+
+    }
+
+
+    .offer-grid {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .offer-card {
+
+        padding:22px;
+
+    }
+
+
+    .offer-total h3 {
+
+        font-size:2.2rem;
+
+    }
+
+
+}
+/* ================================
+   BLOCO 8 - ANCORAGEM DE PREÇO
+================================ */
+
+
+.anchor-section {
+
+    background:#f5f5f3;
+
+    color:#151515;
+
+    padding:70px 8%;
+
+    text-align:center;
+
+}
+
+
+
+.anchor-container {
+
+    max-width:850px;
+
+    margin:auto;
+
+}
+
+
+
+.anchor-container .section-tag {
+
+    color:#8b1e1e;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.anchor-container h2 {
+
+    font-size:2.2rem;
+
+    line-height:1.25;
+
+    max-width:750px;
+
+    margin:0 auto 20px;
+
+}
+
+
+
+.anchor-intro {
+
+    color:#555;
+
+    max-width:650px;
+
+    margin:0 auto 40px;
+
+    line-height:1.6;
+
+    font-size:1.05rem;
+
+}
+
+
+
+/* CAIXA CENTRAL */
+
+
+.anchor-box {
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    text-align:left;
+
+}
+
+
+
+.anchor-box h3 {
+
+    font-size:1.3rem;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.anchor-box ul {
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+
+
+.anchor-box li {
+
+    padding:12px 0;
+
+    border-bottom:1px solid #eee;
+
+    color:#444;
+
+}
+
+
+
+.anchor-value {
+
+    margin-top:30px;
+
+    text-align:center;
+
+}
+
+
+
+.anchor-value span {
+
+    display:block;
+
+    color:#777;
+
+    font-size:1rem;
+
+}
+
+
+
+.anchor-value strong {
+
+    display:block;
+
+    font-size:3rem;
+
+    color:#151515;
+
+    margin-top:10px;
+
+}
+
+
+
+.anchor-transition {
+
+    margin-top:35px;
+
+    color:#555;
+
+    font-size:1.1rem;
+
+    line-height:1.6;
+
+}
+
+
+
+@media(max-width:700px){
+
+
+    .anchor-section {
+
+        padding:60px 5%;
+
+    }
+
+
+    .anchor-container h2 {
+
+        font-size:1.7rem;
+
+    }
+
+
+    .anchor-box {
+
+        padding:25px;
+
+    }
+
+
+    .anchor-value strong {
+
+        font-size:2.3rem;
+
+    }
+
+
+}
+/* ================================
+   BLOCO 9 - PREÇO E COMPRA
+================================ */
+
+
+.price-section {
+
+    background:#111;
+
+    color:white;
+
+    padding:80px 8%;
+
+    text-align:center;
+
+}
+
+
+
+.price-container {
+
+    max-width:850px;
+
+    margin:auto;
+
+}
+
+
+
+.price-container .section-tag {
+
+    color:#8b1e1e;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.price-container h2 {
+
+    font-size:2.3rem;
+
+    line-height:1.25;
+
+    max-width:750px;
+
+    margin:0 auto 20px;
+
+}
+
+
+
+.price-description {
+
+    color:#bbb;
+
+    max-width:650px;
+
+    margin:0 auto 45px;
+
+    line-height:1.6;
+
+    font-size:1.05rem;
+
+}
+
+
+
+
+/* CARD DE OFERTA */
+
+
+.price-card {
+
+    background:#1b1b1b;
+
+    border:1px solid #333;
+
+    border-radius:20px;
+
+    padding:45px 30px;
+
+    max-width:500px;
+
+    margin:auto;
+
+}
+
+
+
+.old-price {
+
+    color:#888;
+
+    font-size:1.2rem;
+
+}
+
+
+
+.old-price span {
+
+    text-decoration:line-through;
+
+}
+
+
+
+.offer-label {
+
+    margin-top:25px;
+
+    color:#ddd;
+
+    font-size:1.1rem;
+
+}
+
+
+
+.price-card h3 {
+
+    font-size:4rem;
+
+    margin:10px 0;
+
+    color:white;
+
+}
+
+
+
+.access-text {
+
+    color:#bbb;
+
+    margin-bottom:30px;
+
+}
+
+
+
+
+.buy-button {
+
+    display:inline-block;
+
+    background:#8b1e1e;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:20px 50px;
+
+    border-radius:12px;
+
+    font-size:1.2rem;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+
+
+.buy-button:hover {
+
+    transform:translateY(-3px);
+
+    background:#a52323;
+
+}
+
+
+
+.security-text {
+
+    margin-top:25px;
+
+    color:#999;
+
+    font-size:.9rem;
+
+}
+
+
+
+@media(max-width:700px){
+
+
+    .price-section {
+
+        padding:60px 5%;
+
+    }
+
+
+    .price-container h2 {
+
+        font-size:1.8rem;
+
+    }
+
+
+    .price-card {
+
+        padding:35px 20px;
+
+    }
+
+
+    .price-card h3 {
+
+        font-size:3rem;
+
+    }
+
+
+    .buy-button {
+
+        width:100%;
+
+    }
+
+
+}
+/* ================================
+   BLOCO 10 - CONVERSA SÉRIA
+================================ */
+
+
+.serious-section {
+
+    background:#f5f5f3;
+
+    color:#151515;
+
+    padding:80px 8%;
+
+    text-align:center;
+
+}
+
+
+
+.serious-container {
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+
+
+.dark-tag {
+
+    color:#8b1e1e;
+
+}
+
+
+
+.serious-container h2 {
+
+    font-size:2.4rem;
+
+    margin:20px auto 45px;
+
+    line-height:1.25;
+
+}
+
+
+
+
+.choice-grid {
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+
+
+
+
+.choice-card {
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:35px 30px;
+
+    text-align:left;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+}
+
+
+
+.choice-card span {
+
+    font-weight:bold;
+
+    color:#8b1e1e;
+
+    font-size:.9rem;
+
+}
+
+
+
+.choice-card h3 {
+
+    margin:15px 0;
+
+    font-size:1.35rem;
+
+}
+
+
+
+.choice-card p {
+
+    color:#555;
+
+    line-height:1.6;
+
+}
+
+
+
+
+
+.old-choice {
+
+    border-top:4px solid #777;
+
+}
+
+
+
+
+.new-choice {
+
+    border-top:4px solid #8b1e1e;
+
+}
+
+
+
+
+
+.serious-final {
+
+    margin:45px auto 0;
+
+    max-width:700px;
+
+    color:#555;
+
+    line-height:1.7;
+
+    font-size:1.1rem;
+
+}
+
+
+
+.serious-final strong {
+
+    color:#151515;
+
+}
+
+
+
+
+@media(max-width:700px){
+
+
+    .serious-section {
+
+        padding:60px 5%;
+
+    }
+
+
+
+    .serious-container h2 {
+
+        font-size:1.8rem;
+
+    }
+
+
+
+    .choice-grid {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+}
+/* ================================
+   BLOCO 11 - AUTORIDADE
+================================ */
+
+
+.authority-section {
+
+    background:#111;
+
+    color:white;
+
+    padding:90px 8%;
+
+}
+
+
+.authority-container {
+
+    max-width:1100px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:60px;
+
+}
+
+
+
+.authority-image {
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.authority-image img {
+
+    width:280px;
+
+    height:360px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    border:1px solid #333;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.4);
+
+}
+
+
+
+.authority-photo {
+
+    width:280px;
+
+    height:360px;
+
+    background:#1b1b1b;
+
+    border-radius:20px;
+
+    border:1px solid #333;
+
+    display:flex;
+
+    align-items:flex-end;
+
+    justify-content:center;
+
+    padding:25px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.4);
+
+}
+
+
+
+.authority-photo span {
+
+    color:#8b1e1e;
+
+    font-weight:bold;
+
+    letter-spacing:3px;
+
+}
+
+
+
+.authority-content {
+
+    flex:1;
+
+}
+
+
+
+.authority-tag {
+
+    display:inline-block;
+
+    color:#8b1e1e;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.authority-content h2 {
+
+    font-size:2.3rem;
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.authority-content p {
+
+    color:#ccc;
+
+    line-height:1.7;
+
+    margin-bottom:18px;
+
+    font-size:1.05rem;
+
+}
+
+
+
+.authority-highlight {
+
+    margin-top:30px;
+
+    padding:25px;
+
+    background:#1b1b1b;
+
+    border-left:4px solid #8b1e1e;
+
+    border-radius:12px;
+
+    color:#ddd;
+
+    line-height:1.6;
+
+}
+
+
+
+.authority-highlight strong {
+
+    color:white;
+
+}
+
+
+
+@media(max-width:900px){
+
+
+    .authority-container {
+
+        flex-direction:column;
+
+        text-align:left;
+
+    }
+
+
+    .authority-content h2 {
+
+        font-size:1.8rem;
+
+    }
+
+
+    .authority-photo {
+
+        width:230px;
+
+        height:300px;
+
+    }
+
+}
+/* ================================
+   BLOCO 12 - SEGUNDO CTA
+================================ */
+
+
+.final-cta-section {
+
+    background:#f5f5f3;
+
+    color:#151515;
+
+    padding:80px 8%;
+
+    text-align:center;
+
+}
+
+
+
+.final-cta-container {
+
+    max-width:850px;
+
+    margin:auto;
+
+}
+
+
+
+.final-cta-tag {
+
+    display:inline-block;
+
+    color:#8b1e1e;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.final-cta-container h2 {
+
+    font-size:2.4rem;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.final-cta-container > p {
+
+    max-width:650px;
+
+    margin:0 auto 40px;
+
+    color:#555;
+
+    font-size:1.1rem;
+
+    line-height:1.7;
+
+}
+
+
+
+.final-cta-box {
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+    text-align:left;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.final-cta-box strong {
+
+    font-size:1.2rem;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.final-cta-box span {
+
+    color:#444;
+
+}
+
+
+
+.final-cta-button {
+
+    display:inline-block;
+
+    background:#8b1e1e;
+
+    color:white;
+
+    padding:18px 45px;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    font-size:1.1rem;
+
+    transition:.3s;
+
+}
+
+
+
+.final-cta-button:hover {
+
+    transform:translateY(-3px);
+
+}
+
+
+
+@media(max-width:700px){
+
+
+    .final-cta-container h2 {
+
+        font-size:1.8rem;
+
+    }
+
+
+    .final-cta-section {
+
+        padding:60px 6%;
+
+    }
+
+
+}
+/* ================================
+   FAQ
+================================ */
+
+
+.faq-section {
+
+    background:#111;
+
+    color:white;
+
+    padding:90px 8%;
+
+}
+
+
+
+.faq-container {
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+
+
+.faq-container .section-tag {
+
+    color:#c62828;
+
+}
+
+
+
+.faq-container h2 {
+
+    max-width:800px;
+
+    margin:25px auto;
+
+    font-size:2.4rem;
+
+    line-height:1.2;
+
+}
+
+
+
+.faq-intro {
+
+    max-width:700px;
+
+    margin:0 auto 50px;
+
+    color:#bbbbbb;
+
+    font-size:1.1rem;
+
+    line-height:1.6;
+
+}
+
+
+
+.faq-list {
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    text-align:left;
+
+}
+
+
+
+.faq-item {
+
+    background:#1b1b1b;
+
+    border:1px solid #333;
+
+    border-radius:16px;
+
+    padding:25px 30px;
+
+}
+
+
+
+.faq-item h3 {
+
+    color:white;
+
+    font-size:1.1rem;
+
+    margin-bottom:12px;
+
+}
+
+
+
+.faq-item p {
+
+    color:#bbbbbb;
+
+    line-height:1.6;
+
+    margin:0;
+
+}
+
+
+
+@media(max-width:700px){
+
+
+    .faq-container h2 {
+
+        font-size:1.9rem;
+
+    }
+
+
+    .faq-item {
+
+        padding:22px;
+
+    }
+
+
+}
+/* ==========================
+   BLOCO 14 - RODAPÉ
+========================== */
+
+
+.footer-section {
+
+    background:#0b0b0b;
+
+    color:white;
+
+    padding:60px 8% 35px;
+
+    text-align:center;
+
+}
+
+
+
+.footer-container {
+
+    max-width:800px;
+
+    margin:auto;
+
+}
+
+
+
+.footer-container h3 {
+
+    font-size:1.5rem;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.footer-container p {
+
+    color:#aaaaaa;
+
+    line-height:1.7;
+
+    max-width:600px;
+
+    margin:0 auto 35px;
+
+}
+
+
+
+.footer-author {
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+
+
+.footer-author strong {
+
+    color:white;
+
+    font-size:1.1rem;
+
+}
+
+
+
+.footer-author span {
+
+    color:#999;
+
+    font-size:.95rem;
+
+}
+
+
+
+.footer-line {
+
+    width:100%;
+
+    height:1px;
+
+    background:#292929;
+
+    margin:35px 0 25px;
+
+}
+
+
+
+.footer-bottom {
+
+    color:#777;
+
+    font-size:.85rem;
+
+}
+
+
+
+@media(max-width:600px){
+
+
+    .footer-section {
+
+        padding:50px 6% 30px;
+
+    }
+
+
+    .footer-container h3 {
+
+        font-size:1.25rem;
+
+    }
+
+
+}

@@ -200,8 +200,37 @@
     });
   }
 
+function setupStickyCta() {
+
+    const primaryCta = document.querySelector(
+        '.final-cta-button:not(.sticky-checkout-cta)'
+    );
+
+    const stickyCta = document.querySelector('.sticky-checkout-cta');
+
+    if (!primaryCta || !stickyCta) return;
+
+    function updateStickyCta() {
+
+        const primaryCtaRect = primaryCta.getBoundingClientRect();
+
+        const shouldShow = primaryCtaRect.bottom < 0;
+
+        stickyCta.classList.toggle('is-visible', shouldShow);
+
+    }
+
+    window.addEventListener('scroll', updateStickyCta, { passive: true });
+
+    window.addEventListener('resize', updateStickyCta);
+
+    updateStickyCta();
+
+}
+
   function init() {
     setupCookieSettings();
+    setupStickyCta();
 
     const consent = localStorage.getItem(CONSENT_KEY);
 

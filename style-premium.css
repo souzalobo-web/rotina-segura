@@ -1142,9 +1142,14 @@ body {
     line-height: 1.4;
 }
 
-.anchor-list li strong {
-    color: #17384c;
-    font-size: .9rem;
+.anchor-list .anchor-reference-price {
+    color: #6b8291;
+    font-size: .88rem;
+    font-weight: 700;
+    text-decoration-line: line-through;
+    text-decoration-color: #ef3d3d;
+    text-decoration-thickness: 1px;
+    text-decoration-skip-ink: none;
 }
 
 .anchor-value {
